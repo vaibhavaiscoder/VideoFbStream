@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FullScreen">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/exo_fullscreen"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:background="@color/black"
+        app:resize_mode="fill"
+        app:controller_layout_id="@layout/exoplayer_custom_controls"
+        app:use_controller="true">
+
+        <TextView
+            android:id="@+id/tv_fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cc000000"
+            android:visibility="visible"
+            android:text="name"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </com.google.android.exoplayer2.ui.PlayerView>
+
+</RelativeLayout>
